@@ -8,3 +8,5 @@ LED Nummer 5 wird mit einem Leuchtwert 150 blau leuchten
 
 LED-Nummer: 0-99
 Farbwert: 0-255
+
+Library: https://github.com/adafruit/Adafruit_NeoPixel
