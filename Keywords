@@ -1,0 +1,7 @@
+LED Nummer,roter Farbwert,grüner Farbwert,blauer Farbwert,weißer Farbwert
+
+Beispiel:
+
+5,0,0,150,0 (ENTER)
+
+LED Nummer 5 wird mit einem Leuchtwert 150 blau leuchten
