@@ -52,137 +52,113 @@ void loop()
         val++;
         if (val == 1)
         {
-          if(received==48)
+          switch(received)
           {
-            i=0;
-          }
-          else if(received==49)
-          {
-            i=1;
-          }
-          else if(received==50)
-          {
-            i=2;
-          }
-          else if(received==51)
-          {
-            i=3;
-          }
-          else if(received==52)
-          {
-            i=4;
-          }
-          else if(received==53)
-          {
-            i=5;
-          }
-          else if(received==54)
-          {
-            i=6;
-          }
-          else if(received==55)
-          {
-            i=7;
-          }
-          else if(received==56)
-          {
-            i=8;
-          }
-          else if(received==57)
-          {
-            i=9;
-          }
-          
+            case 48:
+              i=0;
+              break;
+            case 49:
+              i=1;
+              break;
+            case 50:
+              i=2;
+              break;
+            case 51:
+              i=3;
+              break;
+            case 52:
+              i=4;
+              break;
+            case 53:
+              i=5;
+              break;
+            case 54:
+              i=6;
+              break;
+            case 55:
+              i=7;
+              break;
+            case 56:
+              i=8;
+              break;
+            case 57:
+              i=9;
+              break;
+          }          
           num1 = i;
         }
         else if (val == 2)
         {
-          if(received==48)
+          switch(received)
           {
-            i=0;
+            case 48:
+              i=0;
+              break;
+            case 49:
+              i=1;
+              break;
+            case 50:
+              i=2;
+              break;
+            case 51:
+              i=3;
+              break;
+            case 52:
+              i=4;
+              break;
+            case 53:
+              i=5;
+              break;
+            case 54:
+              i=6;
+              break;
+            case 55:
+              i=7;
+              break;
+            case 56:
+              i=8;
+              break;
+            case 57:
+              i=9;
+              break;
           }
-          else if(received==49)
-          {
-            i=1;
-          }
-          else if(received==50)
-          {
-            i=2;
-          }
-          else if(received==51)
-          {
-            i=3;
-          }
-          else if(received==52)
-          {
-            i=4;
-          }
-          else if(received==53)
-          {
-            i=5;
-          }
-          else if(received==54)
-          {
-            i=6;
-          }
-          else if(received==55)
-          {
-            i=7;
-          }
-          else if(received==56)
-          {
-            i=8;
-          }
-          else if(received==57)
-          {
-            i=9;
-          }
-          
           num2 = i;
         }
         else if (val == 3)
         {
-          if(received==48)
+          switch(received)
           {
-            i=0;
+            case 48:
+              i=0;
+              break;
+            case 49:
+              i=1;
+              break;
+            case 50:
+              i=2;
+              break;
+            case 51:
+              i=3;
+              break;
+            case 52:
+              i=4;
+              break;
+            case 53:
+              i=5;
+              break;
+            case 54:
+              i=6;
+              break;
+            case 55:
+              i=7;
+              break;
+            case 56:
+              i=8;
+              break;
+            case 57:
+              i=9;
+              break;
           }
-          else if(received==49)
-          {
-            i=1;
-          }
-          else if(received==50)
-          {
-            i=2;
-          }
-          else if(received==51)
-          {
-            i=3;
-          }
-          else if(received==52)
-          {
-            i=4;
-          }
-          else if(received==53)
-          {
-            i=5;
-          }
-          else if(received==54)
-          {
-            i=6;
-          }
-          else if(received==55)
-          {
-            i=7;
-          }
-          else if(received==56)
-          {
-            i=8;
-          }
-          else if(received==57)
-          {
-            i=9;
-          }
-          
           num3 = i;
         }
         else
@@ -195,20 +171,20 @@ void loop()
         farbe++;
         if(farbe==1)
         {
-          if(val==1)
+          switch(val)
           {
-            led=num1;
-          }
-          else if(val==2)
-          {
-            num1=num1*10;
-            led=num1+num2;
-          }
-          else if(val==3)
-          {
-            num1=num1*100;
-            num2=num2*10;
-            led=num1+num2+num3;
+            case 1:
+              led=num1;
+              break;
+            case 2:
+              num1=num1*10;
+              led=num1+num2;
+              break;
+            case 3:
+              num1=num1*100;
+              num2=num2*10;
+              led=num1+num2+num3;
+              break;
           }
           
           if(led>NUMPIXELS)
@@ -218,21 +194,22 @@ void loop()
         }
         else if(farbe==2)
         {
-          if(val==1)
+          switch(val)
           {
-            rot=num1;
+            case 1:
+              rot=num1;
+              break;
+            case 2:
+              num1=num1*10;
+              rot=num1+num2;
+              break;
+            case 3:
+              num1=num1*100;
+              num2=num2*10;
+              rot=num1+num2+num3;
+              break;
           }
-          else if(val==2)
-          {
-            num1=num1*10;
-            rot=num1+num2;
-          }
-          else if(val==3)
-          {
-            num1=num1*100;
-            num2=num2*10;
-            rot=num1+num2+num3;
-          }
+          
           if(rot>255)
           {
             error=1;
@@ -240,21 +217,22 @@ void loop()
         }
         else if(farbe==3)
         {
-          if(val==1)
+          switch(val)
           {
-            gruen=num1;
+            case 1:
+              gruen=num1;
+              break;
+            case 2:
+              num1=num1*10;
+              gruen=num1+num2;
+              break;
+            case 3:
+              num1=num1*100;
+              num2=num2*10;
+              gruen=num1+num2+num3;
+              break;
           }
-          else if(val==2)
-          {
-            num1=num1*10;
-            gruen=num1+num2;
-          }
-          else if(val==3)
-          {
-            num1=num1*100;
-            num2=num2*10;
-            gruen=num1+num2+num3;
-          }
+          
           if(gruen>255)
           {
             error=1;
@@ -262,21 +240,21 @@ void loop()
         }
         else if(farbe==4)
         {
-          if(val==1)
+          switch(val)
           {
-            blau=num1;
+            case 1:
+              blau=num1;
+              break;
+            case 2:
+              num1=num1*10;
+              blau=num1+num2;
+            case 3:
+              num1=num1*100;
+              num2=num2*10;
+              blau=num1+num2+num3;
+              break;
           }
-          else if(val==2)
-          {
-            num1=num1*10;
-            blau=num1+num2;
-          }
-          else if(val==3)
-          {
-            num1=num1*100;
-            num2=num2*10;
-            blau=num1+num2+num3;
-          }
+          
           if(blau>255)
           {
             error=1;
@@ -290,21 +268,22 @@ void loop()
         
         if(farbe==5)
         {
-          if(val==1)
+          switch(val)
           {
-            weiss=num1;
+            case 1:
+              weiss=num1;
+              break;
+            case 2:
+              num1=num1*10;
+              weiss=num1+num2;
+              break;
+            case 3:
+              num1=num1*100;
+              num2=num2*10;
+              weiss=num1+num2+num3;
+              break;
           }
-          else if(val==2)
-          {
-            num1=num1*10;
-            weiss=num1+num2;
-          }
-          else if(val==3)
-          {
-            num1=num1*100;
-            num2=num2*10;
-            weiss=num1+num2+num3;
-          }
+          
           if(weiss>255)
           {
             error=1;
