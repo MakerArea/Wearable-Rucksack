@@ -11,4 +11,4 @@ Farbwert: 0-255
 
 WICHTIG!!!!  am Ende ENTER drücken
 
-Library: https://github.com/adafruit/Adafruit_NeoPixel
+Library MUSS in den Ordner Librarys (Pfad: "Dokumente/Arduino/Librarys"). Sonst geht es nicht. 
