@@ -1,0 +1,10 @@
+Um Musik auf dem Raspberry Pi kabellos abzuspielen haben wir Volumio benutz. Volumio ist Musikplayer, der auf mehreren Platformen ua. Raspberry Pi, funktioniert.
+
+1. Volumio for Raspberry Pi heruntergeladen
+2. Volumio auf SD-Karte von Raspberry Pi geschrieben*
+3. Raspberry Pi mit SD-Karte angeschalten
+4. Mit Hotspot von Raspberry Pi verbunden
+5. Browser geöffnet und http://volumio.local aufgerufen
+6. Volumio eingerichtet, dass es sich automatisch mit einem AccessPoint verbindet*
+
+*Für mehr Informationen, wie man Volumio installiert und einrichtet besuche https://volumio.org/get-started.
